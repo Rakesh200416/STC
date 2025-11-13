@@ -187,7 +187,7 @@ export default function AddTest({ onTestCreated, onBack }) {
       }
 
       const response = await axios.post(
-        "http://localhost:5004/api/tests/create-with-credentials",
+        "https://smart-test-center.onrender.com/api/tests/create-with-credentials",
         {
           email,
           password,
