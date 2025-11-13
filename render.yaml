@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: stc-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES
+        value: 7d
+      - key: PORT
+        value: 10000
+
+  - type: web
+    name: stc-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: /api
+    routes:
+      - type: rewrite
+        source: /api/**
+        destination: https://stc-backend.onrender.com/**
