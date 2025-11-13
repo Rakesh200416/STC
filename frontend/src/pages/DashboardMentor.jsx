@@ -63,7 +63,7 @@ export default function DashboardMentor() {
   const getAvatarUrl = (avatar) => {
     if (!avatar) return null;
     if (avatar.startsWith("http")) return avatar;
-    return `${process.env.REACT_APP_API_URL || 'http://localhost:5004'}${avatar}`;
+    return `https://smart-test-center.onrender.com${avatar}`;
   };
 
   const onChange = (e) => {
