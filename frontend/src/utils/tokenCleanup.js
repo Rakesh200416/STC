@@ -19,7 +19,7 @@ export const isTokenValid = async () => {
   
   try {
     // Test token with a simple API call
-    const response = await fetch('http://localhost:5002/api/tests/health', {
+    const response = await fetch(`${process.env.REACT_APP_API_URL || 'https://smart-test-center.onrender.com/api'}/tests/health`,  {
       headers: {
         'Authorization': `Bearer ${token}`
       }
