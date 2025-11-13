@@ -343,7 +343,7 @@ export default function MentorAssignments() {
                       {/* Action Buttons */}
                       <div className="flex justify-between items-center pt-3 border-t border-gray-100">
                         <button
-                          onClick={() => window.open(`${process.env.REACT_APP_API_URL || 'http://localhost:5004'}${assignment.pdfFile}`, '_blank')}
+                          onClick={() => window.open(`https://smart-test-center.onrender.com${assignment.pdfFile}`, '_blank')}
                           className="flex items-center px-3 py-1.5 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors text-xs font-medium"
                         >
                           <Download className="w-3 h-3 mr-1" />
