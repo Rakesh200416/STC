@@ -26,7 +26,7 @@ if (token) {
 }
 
 // Test API call
-fetch('http://localhost:5002/api/tests/health', {
+fetch('https://smart-test-center.onrender.com/api/tests/health', {
   headers: {
     'Authorization': `Bearer ${token}`
   }
