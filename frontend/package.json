@@ -17,7 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
     "build": "chmod +x node_modules/.bin/react-scripts && npx react-scripts build",
+=======
+    "build": "npx react-scripts build",
+>>>>>>> 6bdf3c336238358f5ddd9093da6c6e47a58c661b
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -33,4 +37,8 @@
       "last 1 safari version"
     ]
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6bdf3c336238358f5ddd9093da6c6e47a58c661b
