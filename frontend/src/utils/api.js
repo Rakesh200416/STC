@@ -13,7 +13,7 @@ const getBaseURL = () => {
   }
   
   // Default to localhost for development
-  return 'https://smart-test-center.onrender.com/api';
+  return 'http://localhost:5004/api';
 };
 
 const api = axios.create({

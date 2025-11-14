@@ -18,11 +18,11 @@ services:
     name: stc-frontend
     env: static
     buildCommand: npm install && npm run build
-    staticPublishPath: ./build
+    staticPublishPath: build
     envVars:
       - key: REACT_APP_API_URL
-        value: /api
+        value: https://stc-backend.onrender.com/api
     routes:
       - type: rewrite
         source: /api/**
-        destination: https://stc-backend.onrender.com/**
+        destination: https://stc-backend.onrender.com/api

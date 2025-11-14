@@ -15,7 +15,13 @@ const notificationRoutes = require("./routes/notificationRoutes");
 const app = express();
 
 // ------------------ Middlewares ------------------
-app.use(cors({ origin: ["http://localhost:3002"], credentials: true }));
+app.use(cors({ 
+  origin: [
+    "http://localhost:3002",
+    "https://stc-frontend.onrender.com"
+  ], 
+  credentials: true 
+}));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
