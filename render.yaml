@@ -26,3 +26,6 @@ services:
       - type: rewrite
         source: /api/**
         destination: https://stc-backend.onrender.com/api
+      - type: rewrite
+        source: "/*"
+        destination: /index.html
